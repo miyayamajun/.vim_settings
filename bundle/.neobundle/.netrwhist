@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/var/source/dev08/app/src/control'
+let g:netrw_dirhist_2='/var/source/dev08/app/src/event/gvg'
+let g:netrw_dirhist_3='/var/source/dev08/app/src/Cascade/DataFormat'
+let g:netrw_dirhist_4='/home/jun.miyayama/batch/hoten'
+let g:netrw_dirhist_5='/home/jun.miyayama/batch'
+let g:netrw_dirhist_6='/var/source/dev08/app/cstool/tpl/menu'
