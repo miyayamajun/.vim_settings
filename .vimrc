@@ -203,6 +203,3 @@ endfunction
 
 command! -range ConvertToHtmlEntities :<line1>,<line2> call ConvertToHtmlEntities()
 command! -range ConvertFromHtmlEntities :<line1>,<line2> call ConvertFromHtmlEntities()
-
-" for ag
-let g:ackprg = 'ag --vimgrep'
