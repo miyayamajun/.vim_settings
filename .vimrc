@@ -46,6 +46,9 @@ NeoBundle 'git://github.com/scrooloose/syntastic.git'
 " エスケープ
 NeoBundle 'git://github.com/idbrii/textconv.vim'
 
+" ag.vim
+NeoBundle 'git://github.com/rking/ag.vim'
+
 filetype plugin indent on
 
 colorscheme slate
@@ -58,7 +61,7 @@ set tabstop=4
 set expandtab
 set shiftwidth=4
 set encoding=utf-8
-set fileencodings=utf-8
+set fileencodings=sjis,euc-jp,utf-8
 set clipboard+=unnamed
 set autoindent
 set smartindent
@@ -201,3 +204,5 @@ endfunction
 command! -range ConvertToHtmlEntities :<line1>,<line2> call ConvertToHtmlEntities()
 command! -range ConvertFromHtmlEntities :<line1>,<line2> call ConvertFromHtmlEntities()
 
+" for ag
+let g:ackprg = 'ag --vimgrep'
