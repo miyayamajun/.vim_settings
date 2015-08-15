@@ -49,6 +49,14 @@ NeoBundle 'git://github.com/rking/ag.vim'
 " NERDTree
 NeoBundle 'scrooloose/nerdtree'
 
+" fugitive.vim
+NeoBundle 'tpope/vim-fugitive'
+
+" caw.vim.git
+NeoBundle "tyru/caw.vim.git"
+nmap <C-_> <Plug>(caw:i:toggle)
+vmap <C-_> <Plug>(caw:i:toggle)
+
 filetype plugin indent on
 
 colorscheme slate
