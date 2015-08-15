@@ -29,9 +29,6 @@ NeoBundle 'git://github.com/tpope/vim-surround'
 " HTML,CSS入力支援プラグイン
 NeoBundle 'git://github.com/mattn/emmet-vim'
 
-" コメント切り替え
-NeoBundle 'git://github.com/scrooloose/nerdcommenter'
-
 " シンタックスハイライト用
 NeoBundle 'git://github.com/othree/html5.vim.git'
 NeoBundle 'git://github.com/hail2u/vim-css3-syntax'
@@ -49,6 +46,9 @@ NeoBundle 'git://github.com/idbrii/textconv.vim'
 " ag.vim
 NeoBundle 'git://github.com/rking/ag.vim'
 
+" NERDTree
+NeoBundle 'scrooloose/nerdtree'
+
 filetype plugin indent on
 
 colorscheme slate
@@ -61,7 +61,8 @@ set tabstop=4
 set expandtab
 set shiftwidth=4
 set encoding=utf-8
-set fileencodings=sjis,euc-jp,utf-8
+set fileencoding=utf-8
+set fileencodings=ascii,sjis,euc-jp,utf-8
 set clipboard+=unnamed
 set autoindent
 set smartindent
@@ -83,11 +84,6 @@ set ambiwidth=double
 
 set dictionary=~/.vim_settings/bundle/vim-php-dictionary/dict/PHP.dict
 autocmd FileType php,tpl :set dictionary=~/.vim_settings/bundle/vim-php-dictionary/dict/PHP.dict
-
-" nerdcommenter
-let NERDSpaceDelims = 1
-nmap <C-_> <Plug>NERDCommenterToggle
-vmap <C-_> <Plug>NERDCommenterToggle
 
 " neocomplcache
 " Use neocomplcache.
@@ -203,3 +199,6 @@ endfunction
 
 command! -range ConvertToHtmlEntities :<line1>,<line2> call ConvertToHtmlEntities()
 command! -range ConvertFromHtmlEntities :<line1>,<line2> call ConvertFromHtmlEntities()
+
+" NERDTree settings
+nnoremap <silent><C-e> :NERDTreeToggle<CR>
